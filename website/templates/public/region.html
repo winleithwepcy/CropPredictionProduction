@@ -1,0 +1,381 @@
+{% extends "public/templates/public_layout.html" %}
+{% block content %}
+    <div class="container" style="font-family: Calibri;">
+        <div class="about-west_region">
+            <div class="container">
+                <h3 class="region_title"><strong>အေနာက္ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body" style="background-color: whitesmoke;">
+                                <h5 class="sub_title">ခ်င္းျပည္နယ္</h5>
+                                <img src="/static/images/regions_map_chin.png" alt="Chin" class="region_img">
+                                <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                    ေတာင္တန္း
+                                    ကုန္းျမင့္
+                                    ခ်ိဳင့္ဝွမ္းလြင္ျပင္
+                                    <br><strong>ေျမဆီလြွာ။ ။ </strong>ေတာင္ျမင့္နီညိဳေတာေျမ၊ ေတာင္ျမင့္ဝါညိဳေတာေျမ<br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာၾကား<br>
+                                    <span class="dots">...</span>
+                                    <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                        အပူေလ်ာ့ပိုင္းကုန္းျမင့္
+                                        <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                        ေတာင္ေပၚအျမဲစိမ္းေတာ
+                                        <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                    </strong>
+                                    ေတာင္ယာ၊ သစ္သီး၊ ဥယ်ာဥ္
+                                    <br> </span>
+                                    <a>Show More</a>      
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ရခိုင္ျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_rakhine.png" alt="Rakhine" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ေတာင္တန္းျမစ္ဝကြ်န္းေပၚကမ္းရိုးတန္း
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                ႏုန္းေျမ လယ္ေျမ ကနစိုေတာေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>
+                                ၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာေက်ာ္
+                                <br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းမုတ္သံု
+                                     <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                     အျမဲစိမ္းေတာ၊ ဒီေရေတာ၊ သဲခံုေတာ
+                                     <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>
+                                ေတာင္ယာ၊ သစ္သီး၊ ဥယ်ာဥ္၊ လယ္
+                                <br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  
+                  
+                </div>    
+            </div>
+        </div>       
+        <div class="about-east_region">
+            <div class="container">
+                <h3 class="region_title"><strong>အေရွ့ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ကယားျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_chin.png" alt="Kayah" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ကုန္းျမင့္ေတာင္တန္း၊ခ်ိဳင့္ဝွမိးလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။</strong> ေတာင္ျမင့္ေျမနီ၊ေျမဝါ၊ႏြံေပါက္၊ထံုးက်န္ေျမ၊    </br>
+                                ေတာင္ျမင့္ညိဳေရာင္ ႏွင့္ နီညိဳေတာေျမ<br><strong>မိုးေရခ်ိန္။ ။ </strong>
+                                ၁၀၀၀ မွ ၂၀၀၀ မီလီမီတာၾကား
+                                <br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းဆဗားနား၊ အပူေလ်ာ့ပိုင္းမုတ္သံု<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>ေတာင္ေပၚသမပိုင္းအျမဲစိမ္းေတာ <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ေတာင္ယာ၊ ဥယ်ာဥ္သီးႏွံ<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ရွမ္းျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_shan.png" alt="Shan" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ကုန္းျမင့္ ေတာင္တန္းခ်ိဳင့္ဝွမ္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                ေတာင္ျမင့္ေျမနီ၊ ေျမဝါ၊ ႏြံေပါက္၊ ထံုးက်န္ေျမ၊ </br>ေတာင္ျမင့္ညိဳေရာင္ ႏွင့္ နီညိဳေတာေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မီလီမီတာခန္႔<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းဆဗားနား၊ အပူေလ်ာ့ပိုင္းမုတ္သံု<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>ေတာင္ေပၚသမပိုင္းအျမဲစိမ္းေတာ
+                                    <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ေတာင္ယာ၊ ဥယ်ာဥ္သီးႏွံ၊ လယ္(စပါး)<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  
+                  
+              </div>    
+            </div>
+        </div>
+        <div class="about-north_region">
+            <div class="container">
+                <h3 class="region_title"><strong>ေျမာက္ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ကခ်င္ျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_kachin.jpg" alt="Kachin" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ေတာင္တန္းကုန္းျမင့္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                ေတာင္ျမင့္ညိဳေရာင္ႏွင့္ နီညိဳေတာေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မီလီမီတာခန္႔<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူေလ်ာ့ပိုင္းမုတ္သံု<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>ေတာင္ေပၚသမပိုင္းအျမဲစိမ္းေတာ၊ </br>အျမဲစိမ္းေတ၊ ရြက္ျပတ္ေရာေႏွာေတာ<br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ေတာင္ယာ<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">စစ္ကိုင္းတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_sagaing.png" alt="Sagaing" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ေတာင္တန္း၊ ကုန္းျမင့္၊ ခ်ိဳင့္ဝွမ္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>ေျမနီသဲဝန္း၊ ေျမဝါသဲဝန္း၊စနယ္ေျမ<br><strong>မိုးေရခ်ိန္။ ။ </strong>၁၀၀၀ မီလီမီတာေအာက္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းဆဗားနား၊ အပူပိုင္းစတက္<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>ရြက္ျပတိေရာေႏွာေတာ၊ အင္တိုင္းေတာ၊ </br>ေျခာက္ေသြ့ေတာ<br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ယာ၊ စပါး(ေရသြင္း)၊ ဥယ်ာဥ္ျခံ<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  
+                  
+              </div>    
+            </div>
+        </div>
+        <div class="about-south_region">
+            <div class="container">
+                <h3 class="region_title"><strong>ေတာင္ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ကရင္ျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_kayin.png" alt="Kayin" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ေတာင္တန္း
+                                ကုန္းရိုး
+                                ျမစ္ဝွမ္းလြင္ျပင္
+                                ကမ္းရိုးတန္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                နီညိဳ၊ဝါညိဳေတာေျမ၊ ဂဝံေျမ၊ ႏုန္းေျမ၊လယ္ေျမ၊ ကနစိုေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>
+                                ၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာေက်ာ္
+                                <br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု
+                                    <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>အပူပိုင္းအျမဲစိမ္းေတာ၊ အင္တိုင္းေတာ၊ စိမ့္ေတာ၊ သဲခံုေတာ၊ ဒီေရေတာ<br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>
+                                ဥယ်ာဥ္သီးႏွံ၊ ႏွစ္ရွည္သီးႏွံ၊လယ္(စပါး)
+                                <br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">မြန္ျပည္နယ္</h5>
+                            <img src="/static/images/regions_map_mon.png" alt="Mon" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ေတာင္တန္း
+                                ကုန္းရိုး
+                                ျမစ္ဝွမ္းလြင္ျပင္
+                                ကမ္းရိုးတန္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                နီညိဳ၊ဝါညိဳေတာေျမ၊ ဂဝံေျမ၊ ႏုန္းေျမ၊လယ္ေျမ၊ ကနစိုေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာေက်ာ္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု
+                                    <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>အပူပိုင္းအျမဲစိမ္းေတာ၊ အင္တိုင္းေတာ၊ စိမ့္ေတာ၊ သဲခံုေတာ၊ ဒီေရေတာ<br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>
+                                ဥယ်ာဥ္သီးႏွံ၊ ႏွစ္ရွည္သီးႏွံ၊လယ္(စပါး)
+                                <br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6" style="margin-top: 2rem; ">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">တနသၤာရီတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_tanintharyi.png" alt="Tanintharyi" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ေတာင္တန္း
+                                ကုန္းရိုး
+                                ျမစ္ဝွမ္းလြင္ျပင္
+                                ကမ္းရိုးတန္းလြင္ျပင္
+                                
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                နီညိဳ၊ဝါညိဳေတာေျမ၊ ဂဝံေျမ၊ ႏုန္းေျမ၊လယ္ေျမ၊ ကနစိုေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာေက်ာ္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု
+                                    <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>အပူပိုင္းအျမဲစိမ္းေတာ၊ အင္တိုင္းေတာ၊ စိမ့္ေတာ၊ သဲခံုေတာ၊ ဒီေရေတာ<br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ဥယ်ာဥ္သီးႏွံ၊ ႏွစ္ရွည္သီးႏွံ၊လယ္(စပါး)<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+                  
+              </div>    
+            </div>
+        </div>
+        <div class="about-central_region">
+            <div class="container">
+                <h3 class="region_title"><strong>အလယ္ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">မႏၱေလးတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_mandalay.png" alt="Mandalay" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ေတာင္တန္း ေျမနိမ့္ေျမျပန္႔ျမစ္ဝွမ္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>ေျမနီသဲဝန္း၊ ေျမဝါသဲဝန္း၊
+                                စနယ္ေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၁၀၀၀ မီလီမီတာေအာက္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းစတက္၊ အပူပိုင္းဆဗားနာ<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                    ရြက္ျပတိေရာေႏွာေတာ၊ အင္တိုင္းေတာ၊ေျခာက္ေသြ႕ေတာ
+                                    <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>ယာ၊ စပါး(ေရသြင္း)၊ ဥယ်ာဥ္ျခံ<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">မေကြးတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_sagaing.png" alt="Magwe" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ေတာင္တန္း ေျမနိမ့္ေျမျပန္႔
+
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>ေျမနီသဲဝန္း၊ ေျမဝါသဲဝန္း၊
+                                စနယ္ေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၁၀၀၀ မီလီမီတာေအာက္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>အပူပိုင္းစတက္၊ အပူပိုင္းဆဗားနား<br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                    ရြက္ျပတိေရာေႏွာေတာ၊ အင္တိုင္းေတာ၊ေျခာက္ေသြ႕ေတာ
+                                    <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>
+                                ယာ၊ စပါး(ေရသြင္း)၊ ဥယ်ာဥ္ျခံ
+                                <br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                  
+                  
+              </div>    
+            </div>
+        </div>
+        <div class="about-lower_region">
+            <div class="container">
+                <h3 class="region_title"><strong>ေအာက္ပိုင္းေဒသ</strong></h3>
+                <div class="d-flex flex-row row py-5">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ဧရာ၀တီတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_ayeyarwady.png" alt="Ayeyarwady" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                                ျမစ္ဝကြ်န္းေပၚ
+                                ျမစ္ဝွမ္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                ဝါညိဳေတာေျမ၊
+                                ႏုန္းေျမ၊လယ္ေျမ၊ကနစိုေတာေျမ၊ </br>သဲခံုေတာေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာေက်ာ္<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု
+                                    <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                    ရြက္ျပတ္ေရာေႏွာေတာ၊ အျမဲစိမ္းေတာ၊ ဒီေရေတာ၊ </br> သဲခံုေတာ
+                                    <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>လယ္၊ ဥယ်ာဥ္ျခံ၊ ယာသီးႏွံ<br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ရန္ကုန္တိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_yangon.png" alt="Yangon" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ျမစ္ဝကၽြန္းေပၚ၊ ျမစ္ဝွမ္းလြင္ျပင္
+                                <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                ဝါညိဳေတာေျမ၊ ႏုန္းေျမ၊လယ္ေျမ၊ကနစိုေတာေျမ၊ </br>သဲခံုေတာေျမ
+                                <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာၾကား<br>
+                                <span class="dots">...</span>
+                                <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု
+                                    <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                    ရြက္ျပတ္ေရာေႏွာေတာ၊ အျမဲစိမ္းေတာ၊ ဒီေရေတာ၊ သဲခံုေတာ </br> သဲခံုေတာ
+                                    <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                </strong>လယ္၊ ဥယ်ာဥ္ျခံ
+                                <br> </span>
+                                <a>Show More</a>      
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-6" style="margin-top: 2rem; ">
+                    <div class="card">
+                        <div class="card-body" style="background-color: whitesmoke;">
+                            <h5 class="sub_title">ပဲခူးတိုင္းေဒသျကီး</h5>
+                            <img src="/static/images/regions_map_tanintharyi.png" alt="Bago" class="region_img">
+                            <p class="showmore"><strong>ေျမမ်က္နွာသြင္ျပင္။ ။</strong> 
+                               ေျမနိမ့္ေျမျပန္႔၊ ျမစ္ဝွမ္းလြင္ျပင္ေတာင္တန္း
+                                 <br><strong>ေျမဆီလြွာ။ ။ </strong>
+                                 ဝါညိဳေတာေျမ၊ ႏုန္းေျမ၊လယ္ေျမ၊ကနစိုေတာေျမ၊  </br>သဲခံုေတာေျမ
+                                 <br><strong>မိုးေရခ်ိန္။ ။ </strong>၂၀၀၀ မွ ၃၀၀၀ မီလီမီတာၾကား<br>
+                                 <span class="dots">...</span>
+                                 <span class="more"> <strong>ရာသီဥတု။ ။ </strong>
+                                    အပူပိုင္းမုတ္သံု၊ အပူပိုင္းဆဗားနား
+                                     <br><strong>သဘာ၀ေပာက္ပင္။ ။</strong>
+                                     ရြက္ျပတ္ေရာေႏွာေတာ၊ အျမဲစိမ္းေတာ၊ </br>  ဒီေရေတာ၊ သဲခံုေတာ
+                                     <br><strong>ေျမအသံုးခ်မွု။ ။ 
+                                 </strong>လယ္၊ ဥယ်ာဥ္ျခံ                                 
+                                 <br> </span>
+                                 <a>Show More</a>      
+                             </p>
+                        </div>
+                    </div>
+                </div>  
+                  
+              </div>    
+            </div>
+        </div>
+    </div> 
+    <script>
+        document.querySelectorAll(".showmore").forEach(function (p) 
+        {
+            p.querySelector("a").addEventListener("click", function () 
+            {
+                p.classList.toggle("show");
+                this.textContent = p.classList.contains("show") ? "Show Less" : "Show More";
+            });
+        });
+    </script>
+{% endblock content %}
