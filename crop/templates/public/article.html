@@ -1,0 +1,18 @@
+{% extends "public/templates/public_layout.html"%}
+{% block content %}
+{% for article in articles %}
+<article class="media">
+    <div class="card" style="margin-top: 3rem; margin-bottom: 3rem;">
+        <div class="card-body border0 shadow">
+            <div class="article-metadata">
+              <small class="text-muted">{{ article.date_posted.strftime('%Y-%m-%d') }}</small>
+            </div>
+            <h2><a class="article-title" style="color:  #088228">{{ article.title }}</a></h2>
+            </br>
+            <p class="article-content">{{ article.content }}</p>
+            </div>
+    </div>
+    
+</article>
+{% endfor %}
+{% endblock content %}    

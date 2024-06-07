@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    {% if title %}
+        <title>လယ်သမား - {{ title }}</title>
+    {% else %}
+        <title>လယ်သမား</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type= "text/css" href="/static/styles.css">
+
+</head>
+<body>
+    <header class="site header">
+        <nav class="shadow-md navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a aria-current="page" class="" href="#">
+                    <img src="/static/images/logo.png" width="50" height="50"
+                    class="logo">
+                </a>
+                <button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="basic-navbar-nav">
+                    <div class="ml-auto nozselect text-right pr-3 justify-content-end navbar-nav">
+                        <div class="dropdown-divider">
+                        </div> 
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('home') }}">ပင္မစာမ်က္ႏွာ</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('crop') }}">သီးႏွံ</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('region') }}">ေဒသ</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('crop_predict') }}">ထြက္ႏႈန္း တြက္ရန္</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('post_surveyform') }}">ဆာေဗးေဖာင္</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap " href="{{ url_for('home_news') }}">မိုးေလဝသ သတင္း</a>
+                        <a class="nav-link text-success a-col font-weight-bold text-wrap" href="{{ url_for('home_article') }}">ေဆာင္းပါး</a>
+                        <a class="nav-link text-success a-col font-weight-bold" href="{{ url_for('login') }}">Login</a>
+                    </div>
+                  </div>
+                </div>
+            </div>    
+        </nav>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <p style="font-size: 2rem;">သင္ဒီေန့စားေသာ အစားအစာအတြက္</p>
+            <p style="font-size: 4rem;">လယ္သမားေတြကို</p>
+            <p style = "font-size: 4rem;"> ေက်းဇူးတင္ပာ</p>
+        </div>
+    </div>
+    
+    <main role="main" class="container">
+        {% block content %}{% endblock content %}
+           
+    </main> 
+  
+    <div class="footer">
+        <p class="text-white">© 2020 လယ္သမား</p></div>
+      </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>

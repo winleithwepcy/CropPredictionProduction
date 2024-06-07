@@ -1,0 +1,89 @@
+{% extends "public/templates/public_layout.html" %}
+{% block content %}
+  <div></div>
+  <div class="predict_login">
+	  <form action="" method="post">
+      <h1 class="crop_title"><strong>ထြက္ႏွုန္း တြက္ခ်က္ရန္</strong></h2>
+            <h4 style="text-align: center; color: #088228;margin-top: 1rem;margin-bottom: 3rem;"><strong>(အဂၤလိပ္ဘာသာျဖင့္သာျဖည့္ေပးပာ)</strong></h4>
+            <table class="table">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">၁</th>
+                  <td>စပါးစတင္စိုက္ပ်ိဳးသည့္လ(၁ လပိုင္း၊ ၂ လပိုင္း၊...)
+                  </td>
+                  <td><input type="number" name="Month" required="required" min="1" max="12"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၂</th>
+                  <td>ပ်ိဳးျကဲေစ့ပမာဏ  (၁ ဧက)
+                    (ကီလိုဂရမ္ႏွုန္း)
+                  </td>
+                  <td><input type="number" name="Seed Rate" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၃</th>
+                  <td>ဓာတ္ေျမျသဇာပမာဏ - NPK (၁ ဧက)
+                    (ကီလိုဂရမ္ႏွုန္း)
+                    </td>
+                  <td><input type="number" name="Fertilizer_NPK" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၄</th>
+                  <td>ဓာတ္ေျမျသဇာပမာဏ -  ကြန္ေပာင္း(၁ ဧက)
+                    (ကီလိုဂရမ္ႏွုန္း)
+                    </td>
+                  <td><input type="number" name="Fertilizer_Compound" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၅</th>
+                  <td>ပိုးသတ္ေဆးပမာဏ (၁ဧက)
+                    (လီတာႏွုန္း)
+                    
+                    </td>
+                  <td><input type="number" name="Pesticide" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၆</th>
+                  <td>ေပာင္းသတ္ေဆးပမာဏ (၁ ဧက)
+                    (လီတာႏွုန္း)
+                    </td>
+                  <td><input type="number" name="Pesticide_1" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၇</th>
+                  <td>သဘာ၀ေျမေဆြး (၁ ဧက)
+                    (တင္းနွုန္း)
+                    </td>
+                  <td><input type="number" name="Manure" required="required" min="0" max="50"/></td>
+                </tr>
+                <tr>
+                  <th scope="row">၈</th>
+                  <td>မိုးေရခ်ိန္(လက္မ)</td>
+                  <td><input type="number" name="Rainfall" required="required" min="0" max="50"/></td>
+                </tr>
+              <tr>
+                  <th></th>
+                  <td></td>
+                  <td><button type="submit" class="btn btn-success btn-small">တြက္ခ်က္ရန္</button></td>
+                </tr>
+              </tbody>
+            </table>
+    </form>
+   <br>
+   <br>
+  <div class="container mb-3 mt-3">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 mb-5 full-width">
+            <div class="card border-0 shadow">
+                <div class="card-body post">
+                  <h1 style="text-align: center;">{{ prediction_text }}</h1>
+                </div>
+              </div>
+            </div>            
+    </div>
+  </div>
+ </div>
+ {% endblock content %}
+
